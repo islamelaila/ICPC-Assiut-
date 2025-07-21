@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        long input = scanner.nextLong();
+
+        int A = Integer.parseInt(String.valueOf(input).substring(0, 1));
+
+        if (A % 2 == 0) {
+            System.out.println("EVEN");
+        } else if (A % 2 == 1) {
+            System.out.println("ODD");
+        } 
+        
+         
+    }
+}
+
+
