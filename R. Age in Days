@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+       int x = scanner.nextInt();
+
+       int years = 365;
+       int months = 30;
+
+       int yearsCount =  (x / years);
+       int monthsCount =  ((x % years) / months);
+       int daysCount =  ((x % years) % months);
+
+       System.out.println(yearsCount + " years");
+       System.out.println(monthsCount + " months");
+       System.out.println(daysCount + " days");
+
+       scanner.close();
+
+     
+     }
+}
+
+
