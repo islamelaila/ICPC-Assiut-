@@ -1,0 +1,30 @@
+import java.util.PriorityQueue;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        
+        int x = scanner.nextInt();
+        int y = scanner.nextInt();
+        int z = scanner.nextInt();
+
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        pq.add(x);
+        pq.add(y);
+        pq.add(z);
+
+        while (!pq.isEmpty()) {
+            System.out.println(pq.poll());
+        }
+
+        System.out.println();
+
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println(z);
+
+    }
+
+}
+
