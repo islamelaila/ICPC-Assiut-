@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.next();  
+        if (input.contains(".")) {
+            String[] parts = input.split("\\.");  
+            int integerPart = Integer.parseInt(parts[0]);
+            int decimalPart = Integer.parseInt(parts[1]);
+
+            if (decimalPart == 0) {
+                System.out.println("int " + integerPart);
+            } else {
+                String decimal = "0." + parts[1];
+                System.out.println("float " + integerPart + " " + decimal);
+            }
+        } else {
+            
+            int integerPart = Integer.parseInt(input);
+            System.out.println("int " + integerPart);
+        }
+    }
+}
