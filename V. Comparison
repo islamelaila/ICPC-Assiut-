@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+       int a = scanner.nextInt();
+       String operator = scanner.next();
+       int b = scanner.nextInt();
+
+       boolean result = false;
+       switch (operator) {
+           case ">":
+               result = a > b;
+               break;
+           case "<":
+               result = a < b;
+               break;
+           case "=":
+               result = a == b;
+               break;
+       }
+       if (result) {
+           System.out.println("Right");
+       } else {
+           System.out.println("Wrong");
+       }
+    }
+}
