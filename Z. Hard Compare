@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        long a = sc.nextLong();
+        long b = sc.nextLong();
+        long c = sc.nextLong();
+        long d = sc.nextLong();
+
+        double left = Math.log(a) * b;
+        double right = Math.log(c) * d;
+
+        if (left > right) {
+            System.out.println("YES");
+        } else {
+            System.out.println("NO");
+        }
+    }
+}
+  
